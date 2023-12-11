@@ -19,11 +19,15 @@
     rel="stylesheet">
 
   <!--custom css link-->
-  <link
-  href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-  rel="stylesheet"/>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
   <link rel="stylesheet" href="./assets/css/style.css">
-  <link rel="stylesheet" href="style2.css" />
+  <link rel="stylesheet" href="./assets/css/style2.css" />
+
+
+  <!-- Doctors & Team Custom CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+
 </head>
 
 <body id="top">
@@ -50,13 +54,15 @@
             <li><a class="nav-link" href="/">Doctors</a></li>
             <li><a class="nav-link" href="/">F.A.Q</a></li>
             <li><a class="nav-link" href="/">Contact</a></li>
-            <li class="sign-in"><a class="nav-link" href="/">Sign In</a></li>
+            <li class="sign-in"><a class="nav-link" href="sign-in.html">Sign In</a></li>
           </ul>
         </nav>
       </div>
       <div class="nav-end">
         <div class="right-container">
+          <a href="sign-in.html">
           <button class="btn btn-primary">Sign In</button>
+          </a>
         </div>
 
         <button
@@ -97,7 +103,7 @@
 
             
             <div class="buttons">
-              <a href="#" class="join">Book Appointment</a>
+              <a href="sign-in.html" class="join">Book Appointment</a>
             </div>
           
           </div>
@@ -114,14 +120,12 @@
 
 
 
-      <!-- 
-        - #SERVICE
-      -->
+      <!--SERVICE-->
 
       <section class="service" aria-label="service">
         <div class="container">
 
-          <h1 style="text-align: center; padding: 50px 0 10px 0; font-size: 32px;">Our Medical Services</h1>
+          <h1 class="headline-md" style="text-align: center; padding: 50px 0 10px 0;">Our Services</h1>
           <p style="text-align: center; padding: 0px 0 100px 0; font-size: 21px;">
             We are dedicated to serve you best medical services
           </p>
@@ -143,7 +147,7 @@
 
                 <p class="card-text">
                   Our primary care services encompass routine check-ups, preventive
-                  care, and the management of common illnesses.
+                  care, & the management of common illnesses.
                 </p>
               </div>
             </li>
@@ -160,8 +164,8 @@
                 </h3>
 
                 <p class="card-text">
-                  Access expert consultations in various specialties, including
-                  cardiology, dermatology, and more.
+                   Expert consultations in various specialties, including
+                  cardiology, dermatology & more.
                 </p>
               </div>
             </li>
@@ -206,7 +210,7 @@
               <div class="service-card" data-reveal="bottom">
 
                 <div class="card-icon">
-                  <img src="./assets/images/icon-4.png" width="71" height="71" loading="lazy" alt="icon">
+                  <img src="./assets/images/icon-5.png" width="71" height="71" loading="lazy" alt="icon">
                 </div>
 
                 <h3 class="headline-sm card-title">
@@ -224,7 +228,7 @@
               <div class="service-card" data-reveal="bottom">
 
                 <div class="card-icon">
-                  <img src="./assets/images/icon-4.png" width="71" height="71" loading="lazy" alt="icon">
+                  <img src="./assets/images/icon-6.png" width="71" height="71" loading="lazy" alt="icon">
                 </div>
 
                 <h3 class="headline-sm card-title">
@@ -246,82 +250,60 @@
 
 
 
-      <!-- 
-        - #ABOUT
-      -->
+      <!--ABOUT-->
 
       <section class="section about" aria-labelledby="about-label">
         <div class="container">
 
           <div class="about-content">
 
-            <p class="section-subtitle title-lg has-after" id="about-label" data-reveal="left">About Us</p>
+            <p class="section-subtitle title-lg has-after" id="about-label" data-reveal="left">A Little Story</p>
 
-            <h2 class="headline-md" data-reveal="left">Experienced Workers</h2>
+            <h2 class="headline-md" data-reveal="left">About Us</h2>
 
             <p class="section-text" data-reveal="left">
-              Aliquam faucibus, odio nec commodo aliquam, neque felis placerat dui, a porta ante lectus dapibus est.
-              Aliquam
+              Your well-being is our priority. At Avita, we believe in
+              providing personalized and comprehensive healthcare services that empower you to
+              lead a healthy and fulfilling life. Our commitment to excellence, compassion, and
+              innovation sets us apart as a trusted partner in your healthcare journey.
             </p>
 
             <ul class="tab-list" data-reveal="left">
 
               <li>
-                <button class="tab-btn active">Vision</button>
+                <button class="tab-btn active">Mission</button>
               </li>
-
-              <li>
-                <button class="tab-btn">Mission</button>
-              </li>
-
-              <li>
-                <button class="tab-btn">Strategy</button>
-              </li>
-
             </ul>
 
             <p class="tab-text" data-reveal="left">
-              Aliquam faucibus, odio nec commodo aliquam, neque felis placerat dui, a porta ante lectus dapibus est.
-              Aliquam a bibendum mi, sed condimentum
+              Our mission is to deliver exceptional healthcare experiences by
+              combining cutting-edge medical practices with a patient-centric approach. We strive to
+              enhance the quality of life for individuals and communities through accessible,
+              compassionate, and comprehensive healthcare services.
             </p>
 
-            <div class="wrapper">
+            
+            <ul class="tab-list" data-reveal="left">
 
-              <ul class="about-list">
+              <li>
+                <button class="tab-btn active">Vision</button>
+              </li>
+            </ul>
 
-                <li class="about-item" data-reveal="left">
-                  <ion-icon name="checkmark-circle-outline"></ion-icon>
+            <p class="tab-text" data-reveal="left">
+              Our vision is to offer a wide range of healthcare services designed to 
+              meet the diverse needs of our patients. From primary care and specialized 
+              consultations to advanced diagnostics and telehealth solutions, our team of 
+              dedicated professionals is here to provide you with the highest standard of care.
+            </p>
 
-                  <span class="span">Sonsectetur adipisicing elit</span>
-                </li>
-
-                <li class="about-item" data-reveal="left">
-                  <ion-icon name="checkmark-circle-outline"></ion-icon>
-
-                  <span class="span">Exercitation ullamco laboris</span>
-                </li>
-
-                <li class="about-item" data-reveal="left">
-                  <ion-icon name="checkmark-circle-outline"></ion-icon>
-
-                  <span class="span">Eiusmod tempor incididunt</span>
-                </li>
-
-                <li class="about-item" data-reveal="left">
-                  <ion-icon name="checkmark-circle-outline"></ion-icon>
-
-                  <span class="span">Aolore magna aliqua</span>
-                </li>
-
-              </ul>
-
-            </div>
+          
 
           </div>
 
           <figure class="about-banner" data-reveal="right">
             <img src="./assets/images/about-banner.png" width="554" height="678" loading="lazy" alt="about banner"
-              class="w-100">
+              class="w-100" style="margin-bottom: 100px;">
           </figure>
 
         </div>
@@ -331,119 +313,78 @@
 
 
 
-      <!-- 
-        - #LISTING
-      -->
+      <!--DOCTOR LISTING-->
 
       <section class="section listing" aria-labelledby="listing-label">
         <div class="container">
 
-          <ul class="grid-list">
+          <li>
+            <p class="section-subtitle title-lg" id="listing-label" data-reveal="left">Our Team</p>
 
-            <li>
-              <p class="section-subtitle title-lg" id="listing-label" data-reveal="left">Doctors Listig</p>
+            <h2 class="headline-md" data-reveal="left">Find your doctor</h2>
+          </li>
 
-              <h2 class="headline-md" data-reveal="left">Browse by specialist</h2>
-            </li>
-
-            <li>
-              <div class="listing-card" data-reveal="bottom">
-
-                <div class="card-icon">
-                  <img src="./assets/images/icon-1.png" width="71" height="71" loading="lazy" alt="icon">
+          <!-- <ul class="grid-list"></ul> -->
+          
+          <div class="wrapper">
+            <div class="box">
+                <i class="fas fa-quote-left quote"></i>
+                <p>
+                  Lorem aliasry ipsum dolor sits ametans, consectetur 
+                  adipisicing elitits. Expedita reiciendis itaque placeat 
+                  thuratu, quasi yiuos repellendus repudiandae deleniti ideas 
+                  fuga molestiae, alias.
+                </p>
+                <div class="content">
+                    <div class="info">
+                    <div class="name">Alex Smith</div>
+                    <div class="job">Gynecology</div>
+                    </div>
+                    <div class="image">
+                    <img src="assets/images/profile-1.png" alt="">
+                    </div>
                 </div>
-
-                <div>
-                  <h3 class="headline-sm card-title">Psychiatry</h3>
-
-                  <p class="card-text">Porta velit</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-quote-left quote"></i>
+                <p>
+                  Lorem aliasry ipsum dolor sits ametans, consectetur 
+                  adipisicing elitits. Expedita reiciendis itaque placeat 
+                  thuratu, quasi yiuos repellendus repudiandae deleniti ideas 
+                  fuga molestiae, alias.
+                </p>
+                <div class="content">
+                    <div class="info">
+                    <div class="name">Steven Chris</div>
+                    <div class="job">Orthopedics</div>
+                    </div>
+                    <div class="image">
+                    <img src="assets/images/profile-2.png" alt="">
+                    </div>
                 </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="listing-card" data-reveal="bottom">
-
-                <div class="card-icon">
-                  <img src="./assets/images/icon-2.png" width="71" height="71" loading="lazy" alt="icon">
+            </div>
+            <div class="box">
+                <i class="fas fa-quote-left  quote"></i>
+                <p>
+                  Lorem aliasry ipsum dolor sits ametans, consectetur adipisicing 
+                  elitits. Expedita reiciendis itaque placeat thuratu, quasi yiuos 
+                  repellendus repudiandae deleniti ideas fuga molestiae, alias.
+                </p>
+                <div class="content">
+                    <div class="info">
+                    <div class="name">Kristina Bellis</div>
+                    <div class="job">Osteology</div>
+                    </div>
+                    <div class="image">
+                    <img src="assets/images/profile-3.png" alt="">
+                    </div>
                 </div>
+            </div> 
+        </div>
 
-                <div>
-                  <h3 class="headline-sm card-title">Gynecology</h3>
-
-                  <p class="card-text">Mattis augue</p>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="listing-card" data-reveal="bottom">
-
-                <div class="card-icon">
-                  <img src="./assets/images/icon-4.png" width="71" height="71" loading="lazy" alt="icon">
-                </div>
-
-                <div>
-                  <h3 class="headline-sm card-title">Pulmonology</h3>
-
-                  <p class="card-text">Mauris laoreet</p>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="listing-card" data-reveal="bottom">
-
-                <div class="card-icon">
-                  <img src="./assets/images/icon-5.png" width="71" height="71" loading="lazy" alt="icon">
-                </div>
-
-                <div>
-                  <h3 class="headline-sm card-title">Orthopedics</h3>
-
-                  <p class="card-text">Convallis vulputate</p>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="listing-card" data-reveal="bottom">
-
-                <div class="card-icon">
-                  <img src="./assets/images/icon-6.png" width="71" height="71" loading="lazy" alt="icon">
-                </div>
-
-                <div>
-                  <h3 class="headline-sm card-title">Pediatrics</h3>
-
-                  <p class="card-text">Posuere maecenas</p>
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="listing-card" data-reveal="bottom">
-
-                <div class="card-icon">
-                  <img src="./assets/images/icon-7.png" width="71" height="71" loading="lazy" alt="icon">
-                </div>
-
-                <div>
-                  <h3 class="headline-sm card-title">Osteology</h3>
-
-                  <p class="card-text">Nisi nullam</p>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
+        <div class="more-btn" style="margin: 0px auto;">
+          <a href="sign-in.html" class="show-form"><div class="refer">See More Doctors</div></a>
+        </div>
         </div>
       </section>
 
@@ -451,121 +392,140 @@
 
 
 
-      <!-- 
-        - #BLOG
-      -->
-
+      <!--F.A.Q-->
       <section class="section blog" aria-labelledby="blog-label">
         <div class="container">
 
           <p class="section-subtitle title-lg text-center" id="blog-label" data-reveal="bottom">
-            News & Article
+            Got a question?
           </p>
 
-          <h2 class="section-title headline-md text-center" data-reveal="bottom">Latest Articles</h2>
+          <h2 class="section-title headline-md text-center" data-reveal="bottom">Frequently Asked Questions</h2>
 
-          <ul class="grid-list">
-
-            <li>
-              <div class="blog-card has-before has-after" data-reveal="bottom">
-
-                <div class="meta-wrapper">
-
-                  <div class="card-meta">
-                    <ion-icon name="person-outline"></ion-icon>
-
-                    <span class="span">By Admin</span>
+          <div class="accordion">
+            <div class="accordion-text">
+              <ul class="faq-text">
+                <li>
+                  <div class="question-arrow">
+                    <span class="question">
+                      What services does Avita Health offer?
+                    </span>
+                    <i class="bx bxs-chevron-down arrow"></i>
                   </div>
-
-                  <div class="card-meta">
-                    <ion-icon name="folder-outline"></ion-icon>
-
-                    <span class="span">Specialist</span>
+                  <p>
+                    Avita Health provides a comprehensive range of healthcare services, including primary
+                    care, specialized consultations, diagnostic imaging, telehealth services, maternity and
+                    women's health, mental health, and more. Explore our Services page for detailed
+                    information
+                  </p>
+                  <span class="line"></span>
+                </li>
+                <li>
+                  <div class="question-arrow">
+                    <span class="question">
+                      How can I book an appointment?
+                    </span>
+                    <i class="bx bxs-chevron-down arrow"></i>
                   </div>
-
-                </div>
-
-                <h3 class="headline-sm card-title">Could intermittent fasting reduce breast cancer</h3>
-
-                <time class="title-sm date" datetime="2022-01-28">28 January, 2022</time>
-
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                  labore et dolore magna aliquyam erat
-                </p>
-
-                <a href="#" class="btn-text title-lg">Read More</a>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card has-before has-after" data-reveal="bottom">
-
-                <div class="meta-wrapper">
-
-                  <div class="card-meta">
-                    <ion-icon name="person-outline"></ion-icon>
-
-                    <span class="span">By Admin</span>
+                  <p>
+                    You can easily book an appointment through our online Appointment Booking System.
+                    Select your preferred date and time, and our system will guide you through the process.
+                    If you need assistance, you can also contact our customer support.
+                  </p>
+                  <span class="line"></span>
+                </li>
+                <li>
+                  <div class="question-arrow">
+                    <span class="question">
+                      Can I access my medical records and test results online?                    
+                    </span>
+                    <i class="bx bxs-chevron-down arrow"></i>
                   </div>
-
-                  <div class="card-meta">
-                    <ion-icon name="folder-outline"></ion-icon>
-
-                    <span class="span">Specialist</span>
+                  <p>
+                    Yes, our secure Patient Portal allows you to access your medical records, test results,
+                    and other health information. If you have any questions about using the portal, please
+                    refer to our Patient Portal Guide.
+                  </p>
+                  <span class="line"></span>
+                </li>
+                <li>
+                  <div class="question-arrow">
+                    <span class="question">
+                      How do I register for an account on the Patient Portal?
+                    </span>
+                    <i class="bx bxs-chevron-down arrow"></i>
                   </div>
-
-                </div>
-
-                <h3 class="headline-sm card-title">Give children more autonomy during the pandemic</h3>
-
-                <time class="title-sm date" datetime="2022-01-28">28 January, 2022</time>
-
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                  labore et dolore magna aliquyam erat
-                </p>
-
-                <a href="#" class="btn-text title-lg">Read More</a>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card has-before has-after" data-reveal="bottom">
-
-                <div class="meta-wrapper">
-
-                  <div class="card-meta">
-                    <ion-icon name="person-outline"></ion-icon>
-
-                    <span class="span">By Admin</span>
+                  <p>
+                    To register for a Patient Portal account, visit our Registration Page(sign up link). Follow
+                    the registration steps, and once your account is created, you'll have secure access to
+                    your health information.
+                  </p>
+                  <span class="line"></span>
+                </li>
+                </li>
+              </ul>
+        
+              <!-- Left Wing -->
+              <ul class="faq-text">
+                <li>
+                  <div class="question-arrow">
+                    <span class="question">
+                      What safeguards protect my data security?
+                    </span>
+                    <i class="bx bxs-chevron-down arrow"></i>
                   </div>
-
-                  <div class="card-meta">
-                    <ion-icon name="folder-outline"></ion-icon>
-
-                    <span class="span">Specialist</span>
+                  <p>
+                    Avita Health prioritizes the security and privacy of your data. Our Patient Portal uses
+                    strong authentication methods, data encryption, and complies with healthcare
+                    regulations.                  
+                  </p>
+                  <span class="line"></span>
+                </li>
+                <li>
+                  <div class="question-arrow">
+                    <span class="question">
+                      How can I reach Avita Health's customer support?
+                    </span>
+                    <i class="bx bxs-chevron-down arrow"></i>
                   </div>
-
-                </div>
-
-                <h3 class="headline-sm card-title">How do binge eating and drinking impact the liver?</h3>
-
-                <time class="title-sm date" datetime="2022-01-28">28 January, 2022</time>
-
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                  labore et dolore magna aliquyam erat
-                </p>
-
-                <a href="#" class="btn-text title-lg">Read More</a>
-
-              </div>
-            </li>
-
-          </ul>
+                  <p>
+                    For general inquiries, appointment scheduling, or assistance, you can reach our
+                    customer support team by phone at [coming soon] or via email at [Info@avitahealth.ng].
+                    Visit our Contact Us page for more details.                  
+                  </p>
+                  <span class="line"></span>
+                </li>
+                <li>
+                  <div class="question-arrow">
+                    <span class="question">
+                      Is Avita Health available for telehealth appointments?
+                    </span>
+                    <i class="bx bxs-chevron-down arrow"></i>
+                  </div>
+                  <p>
+                    Yes, Avita Health offers telehealth services, allowing you to consult with healthcare
+                    professionals remotely. Book a telehealth appointment through our Appointment
+                    Booking System.                  
+                  </p>
+                  <span class="line"></span>
+                </li>
+                <li>
+                  <div class="question-arrow">
+                    <span class="question">
+                      Can I provide feedback or suggestions?
+                    </span>
+                    <i class="bx bxs-chevron-down arrow"></i>
+                  </div>
+                  <p>
+                    Absolutely! We value your feedback. You can share your thoughts or suggestions by
+                    emailing us at feedback@avitahealth.ng                  
+                  </p>
+                  <span class="line"></span>
+                </li>
+              </ul>
+            
+            </div>
+          </div>
 
         </div>
       </section>
@@ -602,11 +562,11 @@
 
               <div>
                 <p>
-                  Main Email : <a href="mailto:contact@website.com" class="contact-link">contact@&shy;website.com</a>
+                  Inquiries: <a href="mailto:Info@avitahealth.ng" class="contact-link">Info@avitahealth.ng</a>
                 </p>
 
                 <p>
-                  Inquiries : <a href="mailto:Info@mail.com" class="contact-link">Info@mail.com</a>
+                  Feedback : <a href="mailto:feedback@avitahealth.ng" class="contact-link">feedback@avitahealth.ng</a>
                 </p>
               </div>
 
@@ -620,11 +580,11 @@
 
               <div>
                 <p>
-                  Office Telephone : <a href="tel:0029129102320" class="contact-link">0029129102320</a>
+                  Office: <a href="tel:+234 801 234 5678" class="contact-link">+234 801 234 5678</a>
                 </p>
 
                 <p>
-                  Mobile : <a href="tel:000232439493" class="contact-link">000 2324 39493</a>
+                  Mobile: <a href="tel:+234 808 765 4321" class="contact-link">+234 808 765 4321</a>
                 </p>
               </div>
 
@@ -636,18 +596,19 @@
 
         <div class="footer-list" data-reveal="bottom">
 
-          <p class="headline-sm footer-list-title">About Us</p>
+          <p class="headline-sm footer-list-title">Contact Us</p>
 
           <p class="text">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+            Thank you for considering Avita Health for your healthcare needs.
+            details.
           </p>
 
           <address class="address">
             <ion-icon name="map-outline"></ion-icon>
 
             <span class="text">
-              2416 Mapleview Drive <br>
-              Tampa, FL 33634
+              60 Allen Avenue Ikeja<br>
+              Lagos, NG
             </span>
           </address>
 
@@ -660,27 +621,39 @@
           </li>
 
           <li>
-            <a href="#" class="text footer-link">Conditions</a>
+            <a href="#" class="text footer-link">
+              Primary Care Services
+            </a>
           </li>
 
           <li>
-            <a href="#" class="text footer-link">Listing</a>
+            <a href="#" class="text footer-link">
+              Specialized Consultations
+            </a>
           </li>
 
           <li>
-            <a href="#" class="text footer-link">How It Works</a>
+            <a href="#" class="text footer-link">
+              Telehealth Services
+            </a>
           </li>
 
           <li>
-            <a href="#" class="text footer-link">What We Offer</a>
+            <a href="#" class="text footer-link">
+              Diagnostic Imaging
+            </a>
           </li>
 
           <li>
-            <a href="#" class="text footer-link">Latest News</a>
+            <a href="#" class="text footer-link">
+              Maternity & Women's Health
+            </a>
           </li>
 
           <li>
-            <a href="#" class="text footer-link">Contact Us</a>
+            <a href="#" class="text footer-link">
+              Mental Health & Counseling
+            </a>
           </li>
 
         </ul>
@@ -688,38 +661,35 @@
         <ul class="footer-list" data-reveal="bottom">
 
           <li>
-            <p class="headline-sm footer-list-title">Useful Links</p>
+            <p class="headline-sm footer-list-title">Quick Links</p>
           </li>
 
-          <li>
-            <a href="#" class="text footer-link">Conditions</a>
+          <li class="business-hour">
+            Mon: 8:00AM - 9:00PM
           </li>
-
-          <li>
-            <a href="#" class="text footer-link">Terms of Use</a>
+          <li class="business-hour">
+            Tue: 8:00AM - 9:00PM
           </li>
-
-          <li>
-            <a href="#" class="text footer-link">Our Services</a>
+          <li class="business-hour">
+            Wed: 8:00AM - 9:00PM
           </li>
-
-          <li>
-            <a href="#" class="text footer-link">Join as a Doctor</a>
+          <li class="business-hour">
+            Thur: 8:00AM - 9:00PM
           </li>
-
-          <li>
-            <a href="#" class="text footer-link">New Guests List</a>
+          <li class="business-hour">
+             Fri: 8:00AM - 9:00PM
           </li>
-
-          <li>
-            <a href="#" class="text footer-link">The Team List</a>
+          <li class="business-hour">
+            Sat: 9:00AM - 9:00PM
           </li>
-
+          <li class="business-hour">
+            Sun: Closed
+          </li>
         </ul>
 
         <div class="footer-list" data-reveal="bottom">
 
-          <p class="headline-sm footer-list-title">Subscribe</p>
+          <p class="headline-sm footer-list-title">Newsletter</p>
 
           <form action="" class="footer-form">
             <input type="email" name="email" placeholder="Email" class="input-field title-lg">
@@ -728,7 +698,7 @@
           </form>
 
           <p class="text">
-            Get the latest updates via email. Any time you may unsubscribe
+            Get the latest updates via Newsletter. unsubscribe any time!
           </p>
 
         </div>
@@ -738,7 +708,7 @@
       <div class="footer-bottom">
 
         <p class="text copyright">
-          &copy; Doclab 2022 | All Rights Reserved by codewithsadee
+          &copy; Avita 2024 | All Rights Reserved | Powered By ChaceByte
         </p>
 
         <ul class="social-list">
@@ -769,7 +739,7 @@
 
           <li>
             <a href="#" class="social-link">
-              <ion-icon name="logo-pinterest"></ion-icon>
+              <ion-icon name="logo-instagram"></ion-icon>
             </a>
           </li>
 
@@ -799,7 +769,7 @@
   <!-- 
     - custom js link
   -->
-  <script src="script2.js"></script>
+  <script src="./assets/js/script2.js"></script>
   <script src="./assets/js/script.js"></script>
 
   <!-- 
