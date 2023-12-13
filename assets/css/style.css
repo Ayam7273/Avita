@@ -245,6 +245,9 @@ body.nav-active { overflow: hidden; }
 [data-reveal="left"].revealed,
 [data-reveal="right"].revealed { transform: translateX(0); }
 
+.nav-link.active {
+  color: #ED0D63;
+}
 
 /* hero */
 
